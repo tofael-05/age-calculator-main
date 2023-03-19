@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Age Calulator</title>
+</head>
+
+<body class="">  
+    <main class="mt-20">
+        <section class="w-[1200px] h-[600px] shadow-2xl mx-auto p-8 rounded-lg border border-sky-500">
+            <h1 class="text-center text-5xl font-bold py-16">Age Calculator</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 w-[60%] gap-6 mx-auto py-6">
+                <input id="date-field" class="p-4 border border-sky-200" type="text" placeholder="Date">
+                <input id="month-field" class="p-4 border border-sky-200" type="text" placeholder="Month">
+                <input id="year-field" class="p-4 border border-sky-200" type="text" placeholder="Year">
+            </div>
+            <button onclick="calculatiorBtn()" class="w-[35%] lg:w-[20%] py-2 rounded hover:bg-teal-400  block mx-auto bg-sky-500  text-white  my-6">Calculation</button>
+            <div>
+                <h1 id="current-age" class="text-center font-bold text-2xl"></h1>
+            </div>
+        </section>
+    </main>
+    <!-- script js -->
+    <script src="index.js"></script>
+</body>
+
+</html>
